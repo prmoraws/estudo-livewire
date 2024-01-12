@@ -30,7 +30,9 @@ php artisan livewire:publish
 php artisan livewire:publish --assets
 ```
 Para manter os ativos atualizados e evitar problemas em atualizações futuras, é altamente recomendável adicionar o comando aos scripts post-autoload-dump em seu arquivo composer.json file:
+```sh
 "@php artisan vendor:publish --force --tag=livewire:assets --ansi"
+```
 
 Traduzir
 ```sh
