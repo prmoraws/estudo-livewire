@@ -1,3 +1,4 @@
+@section('title', 'Upload')
 <section class="container w-full mx-auto items-center py-32">
     <div class="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden items-center">
         <form action="#" method="POST" wire:submit.prevent='storagePhoto' class="px-4 py-6">

@@ -8,7 +8,7 @@
     <link rel="icon" href="https://portalwp.s3.amazonaws.com/wp-content/uploads/2023/07/12170812/icon-logo-universal.png" type="image/png" />
     <link rel="apple-touch-icon" href="https://portalwp.s3.amazonaws.com/wp-content/uploads/2023/07/12170817/apple-touch-icon-180x180-precomposed.png" />
     <link rel="icon" href="https://portalwp.s3.amazonaws.com/wp-content/uploads/2023/07/12170821/apple-touch-icon-precomposed.png" type="image/gif" />
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Servo | @yield('title')</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">

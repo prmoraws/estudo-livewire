@@ -1,3 +1,4 @@
+@section('title', 'Tweet')
 <div class="p-4 m-4">
     Show Tweets
 
