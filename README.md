@@ -55,6 +55,15 @@ Se quiser especificar um layout padrão diferente de layouts.app, você poderá 
 ```sh
 'layout' => 'app.other_default_layout'
 ```
+Ativando fotos
+Se você deseja permitir que os usuários carreguem fotos de perfil personalizadas, você deve habilitar o recurso no config/jetstream.phparquivo de configuração do seu aplicativo. Para ativar o recurso, simplesmente descomente a entrada do recurso correspondente no featuresitem de configuração deste arquivo:
+```sh
+use Laravel\Jetstream\Features;
 
-
+'features' => [
+    Features::profilePhotos(),
+    //Features::api(),
+    //Features::teams(),
+],
+```
 

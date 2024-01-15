@@ -1,8 +1,16 @@
 <?php
 
-use App\Livewire\ShowTweets;
+use App\Livewire\{
+    ShowMembros,
+    ShowTweets
+};
 use App\Livewire\User\UploadPhoto;
 use Illuminate\Support\Facades\Route;
+
+Route::get('/membros', ShowMembros::class);
+
+
+
 
 
 Route::get('/upload', UploadPhoto::class)
@@ -11,6 +19,7 @@ Route::get('/upload', UploadPhoto::class)
 Route::get('/tweets', ShowTweets::class)
     ->name('tweets.index')
     ->middleware('auth');
+
 
 Route::get('/', function () {
     return view('welcome');
